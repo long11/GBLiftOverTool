@@ -1,0 +1,15 @@
+chr1	1	9
+chr1	15	23
+chr1	25	40
+chr2	4	13
+chr2	15	18
+chr2	32	42
+chr3	12	17
+chr3	55	57
+chr3	79	80
+chr4	20	29
+chr4	72	74
+chr4	87	90
+chr5	40	59
+chr5	95	98
+chr5	101	108

@@ -96,18 +96,15 @@ def test_run(verbose):
 		verbose (boolean): Print out steps
 	"""
 
-	###CHANGE THIS TO FIND YOUR PATH
-	filename1 = open("main_chr1.txt", "r")
-	filename2 = open("main_chr2.txt", "r")
+	filename1 = open("test_data/main_chr1.txt", "r")
+	filename2 = open("test_data/main_chr2.txt", "r")
 	filename = [filename1, filename2]
 	
-	###CHANGE THIS TO FIND YOUR PATH
-	genome1_size = open("mouse_size.txt", "r")
-	genome2_size = open("homo_size.txt", "r")
+	genome1_size = open("test_data/mouse_size.txt", "r")
+	genome2_size = open("test_data/homo_size.txt", "r")
 	
-	###CHANGE THIS TO FIND YOUR PATH
-	positions_filename_genome1 = open("mouse.txt")
-	positions_filename_genome2 = open("human.txt")
+	positions_filename_genome1 = open("test_data/mouse.txt")
+	positions_filename_genome2 = open("test_data/human.txt")
 	
 	#Initialize graph
 	graph = Graph()
@@ -128,5 +125,5 @@ if __name__=="__main__":
 	if (choose == "Y" or choose == "y"):
 		verbose = True
 	
-	run(verbose)
-	#test_run(verbose)
+	#run(verbose)
+	test_run(verbose)

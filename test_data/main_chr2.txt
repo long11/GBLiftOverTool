@@ -1,0 +1,15 @@
+0 chr2 2 11 chr2 1 10 - 1748
+TAAATCACCC
+ACATGATCTC
+
+1 chr2 12 19 chr2 31 40 - 16775
+GACTACT—-T
+tttttttttt
+
+2 chr2 30 40 chr2 50 60 - 11032
+gagacgttct
+TAGAGTGTAT
+
+3 chr2 50 60 chr1 40 50 - -162
+TCTTCCTACC
+ACATGATCTC
