@@ -120,10 +120,11 @@ if __name__=="__main__":
 	sys.setrecursionlimit(30000)
 	
 	choose = raw_input("Verbose?: ")
-	verbose = False
+	#verbose = False
+	verbose = True
 	
-	if (choose == "Y" or choose == "y"):
-		verbose = True
+	#if (choose == "Y" or choose == "y"):
+	#	verbose = True
 	
 	#run(verbose)
 	test_run(verbose)
