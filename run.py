@@ -119,7 +119,7 @@ def test_run(verbose):
 if __name__=="__main__":
 	sys.setrecursionlimit(30000)
 	
-	choose = raw_input("Verbose?: ")
+	#choose = raw_input("Verbose?: ")
 	#verbose = False
 	verbose = True
 	
