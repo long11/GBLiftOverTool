@@ -61,18 +61,16 @@ def run(verbose):
 	#Read in 19 axt files
 	filename = []
 	for i in range(1,20):
-		#Need to download all the nineteen axt format into a folder named data.
-		#The folder should be in the same folder with run.py
-		#http://hgdownload.soe.ucsc.edu/goldenPath/mm10/vsHg19/axtNet/
-		filename.append(open("data/chr" + str(i) + ".mm10.hg19.net.axt"))
+		###CHANGE THIS TO FIND YOUR PATH
+		filename.append(open("data/real_data/chr" + str(i) + ".mm10.hg19.net.axt"))
 	
-	#These files is already in the data folder
-	genome1_size = open("data/mm10_chrom_size.txt", "r")
-	genome2_size = open("data/hg19_chrom_size.txt", "r")
+	###CHANGE THIS TO FIND YOUR PATH
+	genome1_size = open("data/real_data/mm10_chrom_size.txt", "r")
+	genome2_size = open("data/real_data/hg19_chrom_size.txt", "r")
 
-	#These files is already in the data folder
-	positions_filename_genome1 = open("data/positions/mouse.bed")
-	positions_filename_genome2 = open("data/positions/human.bed")
+	###CHANGE THIS TO FIND YOUR PATH
+	positions_filename_genome1 = open("data/real_data/positions/mouse.bed")
+	positions_filename_genome2 = open("data/real_data/positions/human.bed")
 	
 	#Initialize graph
 	graph = Graph()
@@ -96,15 +94,18 @@ def test_run(verbose):
 		verbose (boolean): Print out steps
 	"""
 
-	filename1 = open("test_data/main_chr1.txt", "r")
-	filename2 = open("test_data/main_chr2.txt", "r")
+	###CHANGE THIS TO FIND YOUR PATH
+	filename1 = open("data/test_data2/main_chr1.txt", "r")
+	filename2 = open("data/test_data2/main_chr2.txt", "r")
 	filename = [filename1, filename2]
 	
-	genome1_size = open("test_data/mouse_size.txt", "r")
-	genome2_size = open("test_data/homo_size.txt", "r")
+	###CHANGE THIS TO FIND YOUR PATH
+	genome1_size = open("data/test_data2/mouse_size.txt", "r")
+	genome2_size = open("data/test_data2/homo_size.txt", "r")
 	
-	positions_filename_genome1 = open("test_data/mouse.txt")
-	positions_filename_genome2 = open("test_data/human.txt")
+	###CHANGE THIS TO FIND YOUR PATH
+	positions_filename_genome1 = open("data/test_data2/mouse.txt")
+	positions_filename_genome2 = open("data/test_data2/human.txt")
 	
 	#Initialize graph
 	graph = Graph()
@@ -122,7 +123,7 @@ if __name__=="__main__":
 	#choose = raw_input("Verbose?: ")
 	#verbose = False
 	verbose = True
-	
+
 	#if (choose == "Y" or choose == "y"):
 	#	verbose = True
 	
