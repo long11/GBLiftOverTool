@@ -95,17 +95,17 @@ def test_run(verbose):
 	"""
 
 	###CHANGE THIS TO FIND YOUR PATH
-	filename1 = open("test_data/test_data2/main_chr1.txt", "r")
-	filename2 = open("test_data/test_data2/main_chr2.txt", "r")
+	filename1 = open("test_data/main_chr1.txt", "r")
+	filename2 = open("test_data/main_chr2.txt", "r")
 	filename = [filename1, filename2]
 	
 	###CHANGE THIS TO FIND YOUR PATH
-	genome1_size = open("test_data/test_data2/mouse_size.txt", "r")
-	genome2_size = open("test_data/test_data2/homo_size.txt", "r")
+	genome1_size = open("test_data/mouse_size.txt", "r")
+	genome2_size = open("test_data/homo_size.txt", "r")
 	
 	###CHANGE THIS TO FIND YOUR PATH
-	positions_filename_genome1 = open("test_data/test_data2/mouse.txt")
-	positions_filename_genome2 = open("test_data/test_data2/human.txt")
+	positions_filename_genome1 = open("test_data/mouse.txt")
+	positions_filename_genome2 = open("test_data/human.txt")
 	
 	#Initialize graph
 	graph = Graph()
